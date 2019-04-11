@@ -1,0 +1,15 @@
+{
+  "name": "mcdutm",
+  "version": "1.0.0",
+  "description": "McD UTM script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sajid Akhtar",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.9",
+    "xlsx": "^0.14.2"
+  }
+}
