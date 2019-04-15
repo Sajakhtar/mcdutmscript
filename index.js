@@ -67,7 +67,15 @@ dataOut.map(x => {
 
   let content = `${size}_${creativeType}_${market}_${lang}`;
 
-  let utm = `utm_source=banner&utm_medium=${publisher.toLowerCase()}&utm_campaign=${campaign
+  // replace special characters REGEX
+  // var regExpr = /[^a-zA-Z0-9-. ]/g
+  // .replace(regExpr, "")
+  // .replace(/[^a-zA-Z0-9]/g, "")
+
+  let utm = `utm_source=banner&utm_medium=${publisher
+    .toLowerCase()
+    .replace(" - ", "")
+    .replace(" ", "")}&utm_campaign=${campaign
     .toLowerCase()
     .replace(" ", "")}&utm_content=${content.toLowerCase()}`;
 
